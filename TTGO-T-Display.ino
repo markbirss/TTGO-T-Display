@@ -82,6 +82,7 @@ void button_init()
     btn2.setPressedHandler([](Button2 & b) {
         btnCick = false;
         Serial.println("btn press wifi scan");
+        tft.setRotation(1);
         wifi_scan();
     });
 }
@@ -97,6 +98,7 @@ void wifi_scan()
     tft.setTextColor(TFT_GREEN, TFT_BLACK);
     tft.fillScreen(TFT_BLACK);
     tft.setTextDatum(MC_DATUM);
+    
     tft.setTextSize(1);
 
     tft.drawString("Scan Network", tft.width() / 2, tft.height() / 2);
@@ -131,10 +133,10 @@ void setup()
     Serial.println("Start");
     tft.init();
     tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
-    tft.setTextSize(2);
-    tft.setTextColor(TFT_WHITE);
-    tft.setCursor(0, 0);
+    //tft.fillScreen(TFT_BLACK);
+    //tft.setTextSize(2);
+    //tft.setTextColor(TFT_WHITE);
+    //tft.setCursor(0, 0);
     tft.setTextDatum(MC_DATUM);
     tft.setTextSize(1);
 
@@ -147,16 +149,16 @@ void setup()
     tft.pushImage(0, 0,  240, 135, ttgo);
     espDelay(5000);
 
-    tft.setRotation(0);
-    int i = 5;
-    while (i--) {
-        tft.fillScreen(TFT_RED);
-        espDelay(1000);
-        tft.fillScreen(TFT_BLUE);
-        espDelay(1000);
-        tft.fillScreen(TFT_GREEN);
-        espDelay(1000);
-    }
+    //tft.setRotation(0);
+    //int i = 5;
+    //while (i--) {
+        //tft.fillScreen(TFT_RED);
+        //espDelay(1000);
+        //tft.fillScreen(TFT_BLUE);
+        //espDelay(1000);
+        //tft.fillScreen(TFT_GREEN);
+        //espDelay(1000);
+    //}
 
     button_init();
 
