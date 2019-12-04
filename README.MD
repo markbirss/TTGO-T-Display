@@ -39,3 +39,6 @@
 
 2019/08/06:
 * The TFT_eSPI and Button2 libraries have been synchronized to the main branch
+
+2019/12/04: 
+ * Add new logo and rotate screen output
