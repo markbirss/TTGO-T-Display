@@ -1,4 +1,4 @@
-# TTGO T-Display
+# TTGO T-Display (240x135 pixels)
 
 ![image](https://github.com/Xinyuan-LilyGO/TTGO-T-Display/blob/master/image/pinmap.jpg)
 ## 1.Install the following dependency library files:
