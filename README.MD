@@ -1,5 +1,7 @@
 # TTGO T-Display (240x135 pixels)
 
+![image](https://github.com/markbirss/TTGO-T-Display/blob/master/image/ttgo.png)
+
 ![image](https://github.com/Xinyuan-LilyGO/TTGO-T-Display/blob/master/image/pinmap.jpg)
 ## 1.Install the following dependency library files:
 - [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)        
