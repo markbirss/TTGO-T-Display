@@ -66,7 +66,7 @@ void button_init()
         tft.setTextColor(TFT_GREEN, TFT_BLACK);
         tft.setTextDatum(MC_DATUM);
         tft.drawString("Press again to wake up",  tft.width() / 2, tft.height() / 2 );
-        espDelay(6000);
+        //espDelay(6000);
         digitalWrite(TFT_BL, !r);
 
         tft.writecommand(TFT_DISPOFF);
@@ -74,10 +74,10 @@ void button_init()
         esp_sleep_enable_ext1_wakeup(GPIO_SEL_35, ESP_EXT1_WAKEUP_ALL_LOW);
         esp_deep_sleep_start();
     });
-    btn1.setPressedHandler([](Button2 & b) {
-        Serial.println("Detect Voltage..");
-        btnCick = true;
-    });
+    //btn1.setPressedHandler([](Button2 & b) {
+    //    Serial.println("Detect Voltage..");
+    //    btnCick = true;
+    //});
 
     btn2.setPressedHandler([](Button2 & b) {
         btnCick = false;
@@ -147,7 +147,8 @@ void setup()
 
     tft.setSwapBytes(true);
     tft.pushImage(0, 0,  240, 135, ttgo);
-    espDelay(5000);
+    
+    //espDelay(5000);
 
     //tft.setRotation(0);
     //int i = 5;
@@ -179,8 +180,8 @@ void setup()
 
 void loop()
 {
-    if (btnCick) {
-        showVoltage();
-    }
+    //if (btnCick) {
+    //    showVoltage();
+    //}
     button_loop();
 }
