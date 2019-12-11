@@ -2,6 +2,9 @@
 
 ![image](https://github.com/markbirss/TTGO-T-Display/blob/master/image/ttgo.png)
 
+Other Guide
+https://sites.google.com/site/jmaathuis/arduino/lilygo-ttgo-t-display-esp32
+
 ![image](https://github.com/Xinyuan-LilyGO/TTGO-T-Display/blob/master/image/pinmap.jpg)
 ## 1.Install the following dependency library files:
 - [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)        
